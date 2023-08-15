@@ -16,15 +16,15 @@
             <div class="grid grid-cols-3 gap-3 w-9/12 mx-auto">
                 <div class="bg-green-600 p-10 text-white rounded-xl">
                     <h4 class="text-2xl">Deposite</h4>
-                    <h3 class="text-4xl">$00</h3>
+                    <h3 class="text-4xl">$ <span id="deposite-total">00</span></h3>
                 </div>
                 <div class="bg-indigo-500 p-10 text-white rounded-xl al">
                     <h4 class="text-2xl">Withdraw</h4>
-                    <h3 class="text-4xl">$00</h3>
+                    <h3 class="text-4xl">$ <span id="witdraw-total">00</span></h3>
                 </div>
                 <div class="bg-sky-500/75 p-10 text-white rounded-xl">
                     <h4 class="text-2xl">Balance</h4>
-                    <h3 class="text-4xl">$1200</h3>
+                    <h3 class="text-4xl">$ <span id="balance-total">1200</span></h3>
                 </div>
             </div> 
         </section>
@@ -32,17 +32,19 @@
         <section class="mt-12 p-10">
             <div class="grid grid-cols-2 gap-3 w-9/12 mx-auto">
                 <div class="bg-yellow-600 p-10 text-white rounded-xl">
-                    <h4 class="text-2xl p-4">Add Deposite</h4>
+                    <h4 class="text-2xl p-4">Deposite</h4>
                     <input class="w-9/12 block mb-2 px-3 text-black" type="text" name="" id="user-diposite" placeholder="$ Amount your diposite">
-                    <button class="bg-sky-600 hover:bg-sky-700 px-8 py-2 rounded-lg font-medium">Deposite</button>
+                    <button id="btn-deposit" class="bg-sky-600 hover:bg-sky-700 px-8 py-2 rounded-lg font-medium">Deposite</button>
                 </div>
                 <div class="bg-red-600 p-12 text-white rounded-xl">
                     <h4 class="text-2xl p-4">Add Amount</h4>
-                    <input class="w-9/12 block mb-2 px-3 text-black" type="text" name="" id="user-diposite" placeholder="$ Amount your diposite">
-                    <button class="bg-sky-600 hover:bg-sky-700 px-8 py-2 rounded-lg font-medium">Please Withdraw</button>
+                    <input class="w-9/12 block mb-2 px-3 text-black" type="text" name="" id="user-withdraw" placeholder="$ Amount your diposite">
+                    <button id="btn-withdraw" class="bg-sky-600 hover:bg-sky-700 px-8 py-2 rounded-lg font-medium"> Withdraw</button>
                 </div>
             </div>
         </section>
     </main>
+    <script src="js/bank.js"></script>
+    <script src="js/withdraw.js"></script>
 </body>
 </html>
